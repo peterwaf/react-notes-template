@@ -55,3 +55,9 @@ body {
 .card {
   box-shadow: 0 2px 5px #ccc;
 }
+
+#form-container {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(33 37 41 / 77%);
+}
