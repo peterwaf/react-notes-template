@@ -25,7 +25,7 @@ function EditItemForm(props) {
                     e.preventDefault();
                     props.editSelectedNote(props.selectedNoteId, newNoteTitle, newNoteContent);
                     props.isEditItem(props.selectedNoteId);
-                }} className="p-3 rounded">
+                }} className="p-3 data-form rounded">
                     <input type="text" onChange={(e) => {
                         setNewNoteTitle(e.target.value)
                     }} value={newNoteTitle} className="form-control" placeholder="Title" id="noteTitle" aria-label="noteTitle" />

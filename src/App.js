@@ -49,12 +49,12 @@ function App() {
     })
     setNotes(newNotes);
   }
-console.log(notes)
+
   return (
     <div className="App">
       <div className="container-fluid">
         <Header />
-        <Button displayHideForm={displayHideForm} />
+        <Button displayHideForm={displayHideForm} isFormVisible = {isFormVisible} />
         <Form isFormVisible={isFormVisible} displayHideForm={displayHideForm} updateNotes={updateNotes} />
         <EditItemForm editItem={editItem} existingNotes={notes} isEditItem={isEditItem} selectedNoteId={selectedNoteId} editSelectedNote={editSelectedNote} />
         <Content notes={notes} deleteNote={deleteNote} isEditItem={isEditItem} />
